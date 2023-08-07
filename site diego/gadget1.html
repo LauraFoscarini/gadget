@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tecnologia & Gadgets </title>
+  <link href="mystyle.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <header>
+    <button id="dark-mode-toggle"><i class="fa-sharp fa-solid fa-moon" style="color: #ffffff; width: 100%;"></i></button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="tecnologias2.html">TECNOLOGIAS</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Digite aqui...">
+        <button type="submit">Pesquisar</button>
+      </div>
+    </nav>
+  </header>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+    body.dark-mode {
+    background-color: #0e0e0e;
+    color: #f5f5f5;
+}
+#dark-mode-toggle {
+	display: flex;
+    align-items: center;
+    font-size: -1rem; 
+    cursor: pointer;
+	background-color:black;
+    border: none;
+    outline: none;
+	color: #fff;
+	margin-left: 6%;
+	margin-top: 1%;
+	align-items:center;
+	margin-bottom: -2.5%;
+	position: relative;
+}
+
+#dark-mode-toggle i {
+    bottom: 5%; 
+    left: 30%; 
+    font-size: 2.5rem; 
+}
+:root {
+	--color-neutral-0: #0e0e0e;
+	--color-neutral-10: #171717;
+	--color-neutral-30: #a8a29e;
+	--color-neutral-40: #f5f5f5;
+}
+* {
+	font-family: 'inter', sans-serif;
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+footer {
+	width: 100%;
+	color: var(	--color-neutral-40);
+}
+
+.footer-link{
+	text-decoration: none ;
+}
+
+#footer_content{
+	background-color: var(--color-neutral-10);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+	margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+	display: flex;
+	gap: 4rem;
+	margin-top: 1.5rem
+}
+#footer_social_media .footer-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2rem;
+	width: 2.5rem;
+	color: var(--color-neutral-40);
+	border-radius: 50%;
+	transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+	font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+	opacity: 0.8;
+}
+
+#instagram{
+	background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+	background-color: #4267b3;
+}
+
+#twitter{
+	background-color:#1357e0;
+}
+
+.footer-list{
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+}
+
+.footer-list .footer-link{
+	color: var(--color-neutral-30);
+	transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+	color: #7f37c9;
+}
+
+#footer_subscribe{
+	display: flex;
+	flex-direction: column ;
+	gap: 1.5rem;
+	align-items:center ;
+}
+
+#footer_subscribe p{
+	color: var(--color-neutral-30);
+}
+
+#input_group{
+	display: flex;
+	align-items: center;
+	background-color: var(--color-neutral-0);
+	border-radius: 4px;
+}
+
+#input_group input{
+	all: unset;
+	padding: 0.7rem;
+	width: 100%;
+}
+
+#input_group button{
+	background-color: #7f37c9;
+	border: none;
+	color: var(--color-neutral-40);
+	padding: 0px 1.25rem;
+	font-size: 1.125rem;
+	height: 100%;
+	border-radius: 0px 4px 4px 0pxs;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#input_group button:hover{
+	opacity: 0.8;
+}
+
+#footer_copyright{
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-neutral-0);
+	font-size: 0.9rem;
+	padding: 1rem 0;
+	font-weight: 100;
+	color: var(--color-neutral-30);
+}
+.footer {
+	margin-top: auto;
+	background-color: #f0f0f0;
+	padding: 0%;
+	width: 100%;
+	color: var(--color-neutral-40);
+	margin-top: 20px;
+}
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      margin-top: 10%;
+      text-align: justify;
+      margin-left: 4%;
+      margin-right: 5%;
+      display: flex;
+      align-items: center;
+    }
+
+    .image-container {
+      width: 50%;
+      margin-right: 20px;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      /* Certifique-se de que a altura da imagem seja 100% para preencher a altura da div */
+      max-width: 400px;
+      /* Defina o tamanho máximo da imagem, se necessário */
+      object-fit: cover;
+      /* Evita que a imagem seja cortada */
+      display: block;
+    }
+
+    .text-container {
+      width: 50%;
+    }
+
+    p {
+      padding-top: 5 vw;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #a1cea4;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 7%;
+      margin-left: 18%;
+      /* Adicionando espaço entre a imagem e o botão */
+    }
+
+    .btn:hover {
+      background-color: #bad8bb;
+    }
+
+    .comment-container {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .comment-box {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .comment-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .comment-text {
+      font-size: 14px;
+      text-align: left;
+      /* Alinhando os comentários à esquerda */
+    }
+
+    .comment-footer {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+      text-align: left;
+      /* Alinhando os comentários à esquerda */
+    }
+
+    .comment-form {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .comment-form textarea {
+      width: 100%;
+      resize: vertical;
+    }
+
+    .comment-form button {
+      background-color: #a1cea4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .comment-form button:hover {
+      background-color: #bad8bb;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img class="image" src="produto1.jpg" alt="Imagem" />
+      <a class="btn" href="index.html">Voltar à tela inicial</a>
+    </div>
+    <div class="text-container">
+      <h3>APPLE WATCH</h3>
+      <p>
+        O Apple Watch é um dos produtos mais notáveis da Apple, lançado em 2015. Foi criado como uma extensão natural do
+        ecossistema da Apple, visando oferecer uma experiência completa para os usuários, integrando-se perfeitamente
+        com
+        o iPhone e outros dispositivos da marca. A ideia por trás do Apple Watch era criar um dispositivo que fosse não
+        apenas um relógio inteligente, mas também um assistente pessoal, um dispositivo de saúde e condicionamento
+        físico,
+        além de uma plataforma para aplicativos úteis.</p>
+      <p>
+        A jornada para a criação do Apple Watch começou muito antes do lançamento oficial. Rumores sobre um possível
+        relógio inteligente da Apple surgiram anos antes do produto ser oficialmente anunciado. Em 2014, a Apple
+        finalmente confirmou os boatos e anunciou o desenvolvimento do Apple Watch durante um evento especial. </p>
+      <p>
+        A equipe de design liderada pelo famoso designer Jony Ive trabalhou incansavelmente para criar um relógio que
+        combinasse funcionalidade e moda, utilizando materiais de alta qualidade e uma interface de usuário inovadora. O
+        Apple Watch foi disponibilizado em três edições diferentes: Apple Watch Sport (com caixa de alumínio), Apple
+        Watch
+        (com caixa de aço inoxidável) e Apple Watch Edition (com caixa de ouro 18 quilates).</p>
+      <p>
+        O dispositivo foi lançado em várias versões e atualizações ao longo dos anos, aprimorando recursos, desempenho e
+        design. Além de exibir as horas, o Apple Watch oferece uma série de recursos úteis, como notificações de
+        mensagens, e-mails e aplicativos, controle de música, monitoramento de atividades físicas e saúde, navegação
+        GPS,
+        pagamentos com Apple Pay e muito mais.</p>
+      <p>
+        O Apple Watch tornou-se uma ferramenta valiosa para muitas pessoas, especialmente para aqueles que estão
+        envolvidos em atividades físicas e buscam uma vida mais saudável. Sua capacidade de monitorar a frequência
+        cardíaca, registrar dados de atividades físicas e fornecer lembretes de movimento tem ajudado muitos usuários a
+        alcançar seus objetivos de condicionamento físico.</p>
+      <p>
+        Além disso, o Apple Watch também possui uma variedade de aplicativos disponíveis para download na App Store,
+        permitindo que os desenvolvedores criem soluções inovadoras para uma ampla gama de necessidades.</p>
+      <p>
+        Em resumo, o Apple Watch é um produto que redefiniu o conceito de relógio tradicional, transformando-o em uma
+        ferramenta poderosa e versátil, que vai além da simples marcação de horas. Combinando design elegante, recursos
+        avançados e integração perfeita com o ecossistema da Apple, o Apple Watch se tornou um dispositivo indispensável
+        para muitos usuários, abrindo caminho para a revolução dos wearables e definindo novos padrões para a indústria
+        de
+        tecnologia.
+      </p>
+
+    </div>
+  </div>
+  <div class="comment-form">
+    <textarea placeholder="Deixe seu comentário aqui"></textarea>
+    <button type="submit">Comentar</button>
+  </div>
+
+  <div class="comment-box">
+    <div class="comment-header">Felipe</div>
+    <div class="comment-text">
+      Ótimo artigo, consegui me decidir entre os aparelhos e a sua funcionalidade.
+    </div>
+    <div class="comment-footer">Postado em 07 de agosto de 2023</div>
+  </div>
+
+  <div class="comment-box">
+    <div class="comment-header">Maitê</div>
+    <div class="comment-text">
+      Muito útil, obrigada pelo artigo!
+    </div>
+    <div class="comment-footer">Postado em 08 de agosto de 2023</div>
+  </div>
+</body>
+<footer class="footer">
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1></h1>
+            <p>it`s all about your drems.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook"> 
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="twitter"> 
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Blogue</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Tecnologia</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Inovações</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Gadgets</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Apple Watch</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Airpods</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Apple TV</a>
+            </li>
+        </ul>
+        <div id="footer_subscribe">
+            <h3>Se inscreva</h3>
+            <p>
+                Digite o seu email para ser notificado
+                de novidades.
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tecnologia & Gadgets </title>
+  <link href="mystyle.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <header>
+    <button id="dark-mode-toggle"><i class="fa-sharp fa-solid fa-moon" style="color: #ffffff; width: 100%;"></i></button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="tecnologias2.html">TECNOLOGIAS</a></li>
+
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Digite aqui...">
+        <button type="submit">Pesquisar</button>
+      </div>
+    </nav>
+  </header>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+	--color-neutral-0: #0e0e0e;
+	--color-neutral-10: #171717;
+	--color-neutral-30: #a8a29e;
+	--color-neutral-40: #f5f5f5;
+}
+* {
+	font-family: 'inter', sans-serif;
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+footer {
+	width: 100%;
+	color: var(	--color-neutral-40);
+}
+
+.footer-link{
+	text-decoration: none ;
+}
+
+#footer_content{
+	background-color: var(--color-neutral-10);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+	margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+	display: flex;
+	gap: 4rem;
+	margin-top: 1.5rem
+}
+#footer_social_media .footer-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2rem;
+	width: 2.5rem;
+	color: var(--color-neutral-40);
+	border-radius: 50%;
+	transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+	font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+	opacity: 0.8;
+}
+
+#instagram{
+	background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+	background-color: #4267b3;
+}
+
+#twitter{
+	background-color:#1357e0;
+}
+
+.footer-list{
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+}
+
+.footer-list .footer-link{
+	color: var(--color-neutral-30);
+	transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+	color: #7f37c9;
+}
+
+#footer_subscribe{
+	display: flex;
+	flex-direction: column ;
+	gap: 1.5rem;
+	align-items:center ;
+}
+
+#footer_subscribe p{
+	color: var(--color-neutral-30);
+}
+
+#input_group{
+	display: flex;
+	align-items: center;
+	background-color: var(--color-neutral-0);
+	border-radius: 4px;
+}
+
+#input_group input{
+	all: unset;
+	padding: 0.7rem;
+	width: 100%;
+}
+
+#input_group button{
+	background-color: #7f37c9;
+	border: none;
+	color: var(--color-neutral-40);
+	padding: 0px 1.25rem;
+	font-size: 1.125rem;
+	height: 100%;
+	border-radius: 0px 4px 4px 0pxs;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#input_group button:hover{
+	opacity: 0.8;
+}
+
+#footer_copyright{
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-neutral-0);
+	font-size: 0.9rem;
+	padding: 1rem 0;
+	font-weight: 100;
+	color: var(--color-neutral-30);
+}
+.footer {
+	margin-top: auto;
+	background-color: #f0f0f0;
+	padding: 0%;
+	width: 100%;
+	color: var(--color-neutral-40);
+	margin-top: 20px;
+}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      margin-top: 10%;
+      text-align: justify;
+      margin-left: 4%;
+      margin-right: 5%;
+      display: flex;
+      align-items: center;
+    }
+
+    .image-container {
+      width: 50%;
+      margin-right: 20px;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      /* Certifique-se de que a altura da imagem seja 100% para preencher a altura da div */
+      max-width: 400px;
+      /* Defina o tamanho máximo da imagem, se necessário */
+      object-fit: cover;
+      /* Evita que a imagem seja cortada */
+      display: block;
+    }
+
+    .text-container {
+      width: 50%;
+    }
+
+    p {
+      padding-top: 5 vw;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #a1cea4;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 7%;
+      margin-left: 18%;
+      /* Adicionando espaço entre a imagem e o botão */
+    }
+
+    .btn:hover {
+      background-color: #bad8bb;
+    }
+
+    .comment-container {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .comment-box {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .comment-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .comment-text {
+      font-size: 14px;
+      text-align: left;
+      /* Alinhando os comentários à esquerda */
+    }
+
+    .comment-footer {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+      text-align: left;
+      /* Alinhando os comentários à esquerda */
+    }
+
+    .comment-form {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .comment-form textarea {
+      width: 100%;
+      resize: vertical;
+    }
+
+    .comment-form button {
+      background-color: #a1cea4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .comment-form button:hover {
+      background-color: #bad8bb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img class="image" src="produto2.jpg" alt="Imagem" />
+      <a class="btn" href="index.html">Voltar à tela inicial</a>
+    </div>
+    <div class="text-container">
+      <h3>AIRPODS</h3>
+      <p>
+        Os AirPods são fones de ouvido sem fio produzidos pela Apple Inc. Lançados pela primeira vez em 2016, eles
+        rapidamente se tornaram um dos acessórios mais populares e reconhecíveis da marca. Com um design elegante e uma
+        tecnologia avançada, os AirPods oferecem uma experiência de áudio sem fio conveniente e de alta qualidade para
+        usuários de dispositivos Apple, como iPhones, iPads e Macs.</p>
+      <p>
+        O design dos AirPods é caracterizado por suas hastes finas e pontas de fone de ouvido sem fio, que se encaixam
+        confortavelmente nos ouvidos do usuário. O formato único permite que os AirPods sejam facilmente colocados e
+        retirados, além de proporcionar um ajuste mais seguro durante o uso. Eles também vêm com um estojo de
+        carregamento compacto que não apenas mantém os fones de ouvido protegidos, mas também serve como uma estação de
+        carregamento portátil. </p>
+      <p>
+        A tecnologia dos AirPods é alimentada pelo chip da Apple, o que permite uma conexão perfeita com dispositivos
+        iOS e macOS. Eles utilizam a tecnologia Bluetooth para se conectarem ao dispositivo, permitindo uma conexão
+        estável e de longo alcance, eliminando os incômodos fios. Além disso, os AirPods possuem sensores embutidos que
+        detectam quando estão nos ouvidos do usuário, pausando automaticamente a reprodução quando removidos e
+        retomando-a assim que são colocados novamente.</p>
+      <p>
+        Os controles dos AirPods são intuitivos e convenientes. Um toque duplo em um dos fones de ouvido pode acionar
+        uma variedade de funções, como atender chamadas, pausar ou reproduzir músicas, avançar ou retroceder faixas e
+        ativar a assistente de voz Siri. A interação com a Siri através dos AirPods permite que o usuário realize várias
+        tarefas por meio de comandos de voz, como fazer ligações, enviar mensagens, verificar o clima e muito mais.</p>
+      <p>
+        A duração da bateria dos AirPods é considerada uma de suas principais vantagens. Em uso contínuo, os fones de
+        ouvido oferecem várias horas de reprodução, e o estojo de carregamento pode fornecer várias recargas completas
+        antes de precisar ser recarregado. Isso é especialmente útil para pessoas em movimento, que podem desfrutar de
+        longas sessões de audição sem se preocupar com a energia da bateria.</p>
+      <p>
+        Desde o lançamento dos primeiros AirPods, a Apple lançou diversas atualizações e novas versões, como os AirPods
+        Pro, que oferecem cancelamento ativo de ruído e um ajuste personalizável com pontas de silicone. A popularidade
+        dos AirPods transformou-os em um ícone da cultura pop e um símbolo da interação entre tecnologia e estilo de
+        vida moderno.
+      </p>
+      <p>
+        No entanto, é importante observar que, como qualquer produto eletrônico, os AirPods não são isentos de críticas.
+        Alguns apontam a falta de recursos avançados encontrados em outros fones de ouvido sem fio de marcas
+        concorrentes e a dificuldade de substituição das baterias internas como desvantagens potenciais. Além disso, os
+        AirPods têm um preço mais elevado em comparação com muitos outros fones de ouvido sem fio do mercado.
+      </p>
+
+    </div>
+  </div>
+  <div class="comment-form">
+    <textarea placeholder="Deixe seu comentário aqui"></textarea>
+    <button type="submit">Comentar</button>
+  </div>
+
+  <div class="comment-box">
+    <div class="comment-header">Sarah</div>
+    <div class="comment-text">
+      Excelente texto sobre os AirPods! Realmente, esses fones de ouvido sem fio da Apple se tornaram icônicos e
+      símbolos da modernidade. A descrição detalhada das características e benefícios dos AirPods me ajudou a entender
+      melhor o motivo de sua popularidade e integração perfeita com dispositivos Apple. Agora estou ainda mais tentado a
+      adquirir um par para desfrutar de uma experiência de áudio sem fio conveniente e de alta qualidade.
+    </div>
+    <div class="comment-footer">Postado em 07 de agosto de 2023</div>
+  </div>
+
+  <div class="comment-box">
+    <div class="comment-header">Jorge</div>
+    <div class="comment-text">
+      Gostei do texto, mas acho que poderia ter sido um pouco mais imparcial ao abordar as desvantagens dos AirPods.
+      Concordo que eles têm um design elegante e uma experiência de áudio prática, mas também seria interessante
+      mencionar alguns dos problemas que alguns usuários têm enfrentado, como a dificuldade de substituir as baterias
+      internas. No geral, porém, é uma ótima visão geral dos AirPods e seu papel na cultura pop moderna.
+    </div>
+    <div class="comment-footer">Postado em 08 de agosto de 2023</div>
+  </div>
+</body>
+<footer class="footer">
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1></h1>
+            <p>it`s all about your drems.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook"> 
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="twitter"> 
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Blogue</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Tecnologia</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Inovações</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Gadgets</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Apple Watch</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Airpods</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Apple TV</a>
+            </li>
+        </ul>
+        <div id="footer_subscribe">
+            <h3>Se inscreva</h3>
+            <p>
+                Digite o seu email para ser notificado
+                de novidades.
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</html>
